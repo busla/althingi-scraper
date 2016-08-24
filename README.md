@@ -24,16 +24,16 @@ Skafan kemur með vefþjónustu sem hægt er að ræsa svo hægt sé að kalla �
 
 ## Ræsa vefþjónustuna á porti 9080
 ```sh
-scrapyrt
+$ scrapyrt
 ```
 
 ## Dæmi
 ```sh
-curl "http://localhost:9080/crawl.json?spider_name=session&url=http://www.althingi.is/altext/xml/loggjafarthing/"
-curl "http://localhost:9080/crawl.json?spider_name=party&url=http://www.althingi.is/altext/xml/thingflokkar/"
-curl "http://localhost:9080/crawl.json?spider_name=committee&url=http://www.althingi.is/altext/xml/nefndir/?lthing=145"
-curl "http://localhost:9080/crawl.json?spider_name=committee_meeting&url=http://www.althingi.is/altext/xml/nefndarfundir/?lthing=145"
-curl "http://localhost:9080/crawl.json?spider_name=member&url=http://www.althingi.is/altext/xml/thingmenn/?lthing=145"
-curl "http://localhost:9080/crawl.json?spider_name=issue&url=http://www.althingi.is/altext/xml/thingmalalisti/?lthing=145"
-curl "http://localhost:9080/crawl.json?spider_name=petition&url=http://www.althingi.is/altext/xml/atkvaedagreidslur/?lthing=145"
+$ curl "http://localhost:9080/crawl.json?spider_name=session&url=http://www.althingi.is/altext/xml/loggjafarthing/"
+$ curl "http://localhost:9080/crawl.json?spider_name=party&url=http://www.althingi.is/altext/xml/thingflokkar/"
+$ curl "http://localhost:9080/crawl.json?spider_name=committee&url=http://www.althingi.is/altext/xml/nefndir/?lthing=145"
+$ curl "http://localhost:9080/crawl.json?spider_name=committee_meeting&url=http://www.althingi.is/altext/xml/nefndarfundir/?lthing=145"
+$ curl "http://localhost:9080/crawl.json?spider_name=member&url=http://www.althingi.is/altext/xml/thingmenn/?lthing=145"
+$ curl "http://localhost:9080/crawl.json?spider_name=issue&url=http://www.althingi.is/altext/xml/thingmalalisti/?lthing=145"
+$ curl "http://localhost:9080/crawl.json?spider_name=petition&url=http://www.althingi.is/altext/xml/atkvaedagreidslur/?lthing=145"
 ```
