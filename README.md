@@ -1,13 +1,13 @@
 # althingi-scraper
-Skafa fyrir opin gögn Alþingis. Það er sér skafa fyrir hvert módel sem hægt er að kalla í.
+Sköfur fyrir opin gögn Alþingis. Það er sér skafa fyrir hvert módel sem hægt er að kalla í.
 
 
 # Uppsetning
 pip install -r requirements.txt
 
 
-# Kalla í sköfuna úr eigin kóða með HTTP
-Skafan kemur með vefþjónustu sem hægt er að ræsa svo hægt sé að kalla í sköfurnar með HTTP kalli beint úr kóða og fá json.
+# Kalla í sköfurnar úr eigin kóða með HTTP
+Sköfurnar koma með vefþjónustu sem hægt er að ræsa svo hægt sé að kalla í sköfurnar með HTTP kalli beint úr kóða og fá json.
 
 ## Ræsa vefþjónustuna á porti 9080
 ```sh
