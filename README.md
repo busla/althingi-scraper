@@ -5,22 +5,9 @@ Skafa fyrir opin gögn Alþingis. Það er sér skafa fyrir hvert módel sem hæ
 # Uppsetning
 pip install -r requirements.txt
 
-# Dæmi
-Núverandi löggjafarþing er númer 145.
-
-```sh
-$ scrapy crawl session
-$ scrapy crawl party
-$ scrapy crawl committee
-$ scrapy crawl committee_meeting -a session_id=145
-$ scrapy crawl member -a session_id=145
-$ scrapy crawl issue -a session_id=145
-$ scrapy crawl petition -a session_id=145
-
-```
 
 # Kalla í sköfuna úr eigin kóða með HTTP
-Skafan kemur með vefþjónustu sem hægt er að ræsa svo hægt sé að kalla í sköfurnar með HTTP kalli beint úr kóða.
+Skafan kemur með vefþjónustu sem hægt er að ræsa svo hægt sé að kalla í sköfurnar með HTTP kalli beint úr kóða og fá json.
 
 ## Ræsa vefþjónustuna á porti 9080
 ```sh
@@ -28,6 +15,8 @@ $ scrapyrt
 ```
 
 ## Dæmi
+Núverandi löggjafarþing er númer 145.
+
 ```sh
 $ curl "http://localhost:9080/crawl.json?spider_name=session&url=http://www.althingi.is/altext/xml/loggjafarthing/"
 $ curl "http://localhost:9080/crawl.json?spider_name=party&url=http://www.althingi.is/altext/xml/thingflokkar/"
